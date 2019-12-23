@@ -1,0 +1,10 @@
+@import './global/reset';
+@import './variables/variables';
+@import './sections/header';
+@import './sections/main';
+
+
+.secondSection {
+  height: 100vh;
+  background-color: $secondaryColor;
+}
