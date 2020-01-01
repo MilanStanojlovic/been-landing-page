@@ -1,10 +1,9 @@
 @import './global/reset';
+@import './global/container';
 @import './variables/variables';
+
+
 @import './sections/header';
-@import './sections/main';
+@import './sections/hero';
+@import './sections/navigation';
 
-
-.secondSection {
-  height: 100vh;
-  background-color: $secondaryColor;
-}

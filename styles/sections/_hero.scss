@@ -1,0 +1,49 @@
+@import '../variables/variables';
+.hero{
+  height: 86vh;
+  background: url("/assets/Glenocoe\,\ United\ kingdom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero__description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25vh;
+
+  .hero__title{
+    color: $white;
+    font-family: $roboto;
+    font-size: 4rem;
+  }
+  .hero__subtitle{
+    color: $white;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  .hero__buttons{
+    margin-top: 60px;
+  }
+
+  .blue{
+    background-color: $lightBlue;
+    color: $white;
+  }
+
+  .white{
+    background-color: $white;
+    color: $lightBlue;
+  }
+
+  .hero__cta{
+    padding: 10px 40px;
+    border-radius: 25px;
+    margin: 15px;
+    text-transform: uppercase;
+    font-family: $roboto;
+  }
+}
