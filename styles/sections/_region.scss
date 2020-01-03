@@ -15,7 +15,6 @@
 }
 
 .section__header{
-  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,17 +30,16 @@
 }
 
 .region__cards{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .region__cards-card{
   position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 230px;
   border-radius: 5px;
+  margin-top: 10px;
 
   img{
     width: 100%;
