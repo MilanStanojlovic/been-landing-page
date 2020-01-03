@@ -1,0 +1,105 @@
+@import '../variables/variables';
+
+.been{
+  margin-top: 150px;
+  position: relative;
+
+}
+
+.been__backtext{
+  position: absolute;
+  color: $lightGray;
+  font-size: 15rem;
+  z-index: 0;
+  transform: rotate(90deg);
+  left: -295px;
+  top: 150px;
+}
+
+.section__heading{
+  z-index: 10;
+  font-family: $roboto;
+  z-index: 1;
+}
+.section__link{
+  color: $lightBlue;
+  z-index: 10;
+  z-index: 1;
+}
+
+.been__cards{
+  position: relative;
+  display: grid;
+  z-index: 1;
+  grid-template-areas:
+    'box-1 box-2'
+    'box-3 box-4';
+  gap: 15px;
+}
+
+.been__card{
+  display: grid;
+  z-index: 1;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: 1px 3px 6px rgba($color: #000000, $alpha: 0.1);
+  
+  .been__card-container{
+    width: 200px;
+
+    img{
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: -4px;
+    }
+  }
+
+  .been__card-description{
+    margin-top: 20px;
+    margin-left: -20px;
+    padding: 10px;
+
+    h2{
+      font-family: $roboto;
+      font-weight: 100;
+    }
+
+    p{
+      margin: 15px 0;
+      color: $textLightGray;
+    }
+
+    .been__card-location{
+      font-size: 13px;
+      color: $textLightGray;
+    }
+    .been__card-link{
+      color: $lightBlue;
+    }
+  }
+
+  .been__card-description-author{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    p{
+      color: $black; 
+      font-family: $roboto;
+      font-size: 13px;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+    .author__container{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      
+      img{
+        width: 100%;
+      }
+    } 
+  }
+}
