@@ -44,6 +44,22 @@
   border-radius: 5px;
   background-color: $white;
   box-shadow: 1px 3px 6px rgba($color: #000000, $alpha: 0.1);
+
+  .box-1{
+    grid-area: box-1;
+  }
+
+  .box-2{
+    grid-area: box-2;
+  }
+
+  .box-3{
+    grid-area: box-3;
+  }
+
+  .box-4{
+    grid-area: box-4;
+  }
   
   .been__card-container{
     width: 200px;
