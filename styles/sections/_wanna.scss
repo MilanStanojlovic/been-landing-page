@@ -10,7 +10,7 @@
 }
 
 .wanna__card:last-child{
-  display: flex;
+  // display: flex;
   flex-direction: row-reverse;
   margin-top: 50px;
   padding-bottom: 50px;
@@ -55,4 +55,41 @@
     height: 100%;
     border-radius: 5px;
   }
+}
+
+@media(max-width: 1150px){
+  .wanna__card{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .card__image{
+    margin-top: 20px;
+  }
+
+  .wanna__card:last-child{
+    flex-direction: column-reverse;
+    .card__description{
+      margin-left: 0;
+    }
+  }
+}
+
+@media(max-width: 850px){
+  .wanna{
+    margin-top: 50px;
+  }
+}
+
+@media(max-width: 650px){
+ .card__image{
+   height: 250px;
+ }
+
+ .card__description{
+   .card__description-text{
+     text-align: justify;
+     padding-right: 0px;
+   }
+ }
 }

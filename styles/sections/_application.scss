@@ -53,3 +53,15 @@
     border-radius: 25px;
   }
 }
+
+@media(max-width: 930px){
+  .application__backtext{
+    display: none;
+  }
+}
+
+@media(max-width: 850px){
+  .application{
+    margin-top: 40px;
+  }
+}

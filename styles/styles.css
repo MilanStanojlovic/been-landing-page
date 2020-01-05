@@ -22,7 +22,7 @@
 }
 
 .hero {
-  height: 86vh;
+  height: 100vh;
   background: url("/assets/Glenocoe, United kingdom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,7 +121,7 @@
 
 .options {
   background-color: #FFFFFF;
-  width: 860px;
+  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,8 +133,8 @@
   margin-top: -45px;
   padding: 20px 35px;
   z-index: 20;
-  -webkit-box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 5px 7px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 5px 7px 2px rgba(0, 0, 0, 0.1);
 }
 
 .option__element {
@@ -165,15 +165,38 @@
   color: #06BCD4;
 }
 
+@media (max-width: 1000px) {
+  .options {
+    width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .option__element {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .options {
+    margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .region {
-  margin-top: 150px;
-  position: relative;
+  padding-top: 150px;
+  overflow: hidden;
 }
 
 .region__backtext {
   position: absolute;
-  top: -140px;
-  left: -40px;
+  top: -180px;
+  left: -250px;
   color: #F6F6F6;
   font-size: 15rem;
   z-index: 0;
@@ -211,6 +234,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .region__cards-card {
@@ -232,6 +256,23 @@
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .region__backtext {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .region {
+    padding-top: 50px;
+  }
+  .region__cards {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .been {
@@ -275,8 +316,8 @@
   display: -ms-grid;
   display: grid;
   z-index: 1;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
   border-radius: 5px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
@@ -319,7 +360,6 @@
 
 .been__card .been__card-description {
   margin-top: 20px;
-  margin-left: -20px;
   padding: 10px;
 }
 
@@ -371,6 +411,28 @@
   width: 100%;
 }
 
+@media (max-width: 1100px) {
+  .been__backtext {
+    display: none;
+  }
+  .been__cards {
+        grid-template-areas: "box-1" "box-2" "box-3" "box-4";
+  }
+  .been__card-description {
+    margin-left: 10px;
+  }
+  .been__card {
+    -ms-grid-columns: 2fr 6fr;
+        grid-template-columns: 2fr 6fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .been {
+    margin-top: 50px;
+  }
+}
+
 .wanna {
   margin-top: 150px;
 }
@@ -383,9 +445,6 @@
 }
 
 .wanna__card:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -434,6 +493,46 @@
 .card__image img {
   height: 100%;
   border-radius: 5px;
+}
+
+@media (max-width: 1150px) {
+  .wanna__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card__image {
+    margin-top: 20px;
+  }
+  .wanna__card:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .wanna__card:last-child .card__description {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .wanna {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .card__image {
+    height: 250px;
+  }
+  .card__description .card__description-text {
+    text-align: justify;
+    padding-right: 0px;
+  }
 }
 
 .application {
@@ -495,6 +594,18 @@
   border-radius: 25px;
 }
 
+@media (max-width: 930px) {
+  .application__backtext {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .application {
+    margin-top: 40px;
+  }
+}
+
 footer {
   background-color: #484848;
   color: #FFFFFF;
@@ -525,7 +636,6 @@ footer h6 {
 }
 
 .footer__main {
-  width: 600px;
   padding-right: 100px;
 }
 
@@ -585,7 +695,7 @@ footer h6 {
 }
 
 .footer__copyright a {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 @media (max-width: 880px) {
@@ -607,6 +717,15 @@ footer h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .footer__copyright {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__copyright a {
+    margin-left: 0px;
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

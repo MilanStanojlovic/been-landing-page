@@ -1,14 +1,14 @@
 @import '../variables/variables';
 
 .region{
-  margin-top: 150px;
-  position: relative;
+  padding-top: 150px;
+  overflow: hidden;
 }
 
 .region__backtext{
   position: absolute;
-  top: -140px;
-  left: -40px;
+  top: -180px;
+  left: -250px;
   color: $lightGray;
   font-size: 15rem;
   z-index: 0;
@@ -33,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .region__cards-card{
@@ -53,5 +54,21 @@
     font-family: $roboto;
     color: $white;
     font-weight: 700;
+  }
+}
+
+@media(max-width: 1000px){
+  .region__backtext{
+    display: none;
+  }
+}
+
+@media(max-width: 850px){
+  .region{
+    padding-top: 50px;
+  }
+  .region__cards{
+    justify-content: space-evenly;
+    
   }
 }

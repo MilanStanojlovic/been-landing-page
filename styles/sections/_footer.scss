@@ -26,7 +26,7 @@ footer{
 }
 
 .footer__main{
-  width: 600px;
+  // width: 600px;
   padding-right: 100px;
   p{
     margin-top: 10px;
@@ -63,7 +63,7 @@ footer{
   justify-content: flex-end;
   padding: 50px 0;
   a{
-    padding-left: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -81,9 +81,18 @@ footer{
   .footer__main{
     width: 100%;
   }
-
+  
   .footer__secondary{
     justify-content: space-between;
   }
+
+  .footer__copyright{
+    justify-content: flex-start;
+    a{
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+  }
+
 }
 
