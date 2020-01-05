@@ -21,11 +21,34 @@
       a{
         text-transform: uppercase;
         margin: 20px;
-        padding-bottom: 42px;
+        padding-bottom: 41px;
         &:hover{
           border-bottom: 1px solid $white;
         }
       }
+    }
+  }
+
+  .menu__container{
+    padding: 10px;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    cursor: pointer;
+    display: none;
+    .fa-bars{
+      color: $white;
+    }
+  }
+}
+
+@media(max-width: 720px){
+  .hero__nav{
+    padding: 15px;
+    ul{
+      display: none;
+    }
+    .menu__container{
+      display: inline;
+      margin-left: auto;
     }
   }
 }
