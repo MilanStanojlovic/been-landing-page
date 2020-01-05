@@ -1,18 +1,21 @@
 @import '../variables/variables';
 .hero__nav{
   font-family: $roboto;
+  display: flex;
+  align-items: center;
+  padding: 36px 0;
+  position: relative;
+
   h1{
     font-size: 25px;
     letter-spacing: 2px;
+    z-index: 10;
   }
   a{
     color: $white;
   }
-  display: flex;
-  align-items: center;
-  padding: 36px 0;
   
-  ul{
+  .hero__nav-items{
     margin-left: auto;
     li{
       display: inline;
@@ -22,7 +25,7 @@
         text-transform: uppercase;
         margin: 20px;
         padding-bottom: 41px;
-        &:hover{
+        &:hover, &:active{
           border-bottom: 1px solid $white;
         }
       }
@@ -34,6 +37,7 @@
     background-color: rgba($color: #fff, $alpha: 0.1);
     cursor: pointer;
     display: none;
+    z-index: 10;
     .fa-bars{
       color: $white;
     }
@@ -43,12 +47,28 @@
 @media(max-width: 720px){
   .hero__nav{
     padding: 15px;
-    ul{
-      display: none;
+    .hero__nav-items{
+      z-index: 5;
+      background-color: rgba($color: #000000, $alpha: 0.9);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in;
+      
     }
     .menu__container{
       display: inline;
       margin-left: auto;
+    }
+    .nav-active{
+      transform: translateY(0);
     }
   }
 }
