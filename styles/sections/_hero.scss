@@ -47,3 +47,10 @@
     font-family: $roboto;
   }
 }
+
+@media(max-width: 720px){
+  .hero__buttons{
+    display: flex;
+    flex-direction: column;
+  }
+}
