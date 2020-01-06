@@ -23,7 +23,7 @@
 
 .hero {
   height: 100vh;
-  background: url("/assets/Glenocoe, United kingdom.jpg");
+  background: url("../assets/Glenocoe\,\ United\ kingdom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -377,7 +377,8 @@
   display: -ms-grid;
   display: grid;
   z-index: 1;
-      grid-template-areas: 'box-1 box-2' 'box-3 box-4';
+      grid-template-areas: 'box-1 box-2'
+ 'box-3 box-4';
   gap: 15px;
 }
 
@@ -394,24 +395,32 @@
 }
 
 .been__card .box-1 {
+  grid-row: 1;
+  grid-column: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: box-1;
 }
 
 .been__card .box-2 {
+  grid-row: 1;
+  grid-column: 2;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: box-2;
 }
 
 .been__card .box-3 {
+  grid-row: 2;
+  grid-column: 1;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: box-3;
 }
 
 .been__card .box-4 {
+  grid-row: 2;
+  grid-column: 2;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: box-4;
@@ -485,7 +494,10 @@
     display: none;
   }
   .been__cards {
-        grid-template-areas: "box-1" "box-2" "box-3" "box-4";
+        grid-template-areas: "box-1"
+ "box-2"
+ "box-3"
+ "box-4";
   }
   .been__card-description {
     margin-left: 10px;
