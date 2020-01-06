@@ -152,7 +152,7 @@
   .hero__nav .hero__nav-items {
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
